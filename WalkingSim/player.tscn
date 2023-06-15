@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://bep6mtyiq0rm"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_scr5q"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jwl6h"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7e2i8"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_scr5q")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_jwl6h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_7e2i8")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.58944, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="InteractionNotifier" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CollectionTracker" type="Label" parent="Control/MarginContainer"]
+layout_mode = 2
