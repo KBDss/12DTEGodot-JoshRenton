@@ -1,34 +1,38 @@
-[gd_scene load_steps=7 format=3 uid="uid://bf7g7ywclqh0q"]
+[gd_scene load_steps=8 format=3 uid="uid://bf7g7ywclqh0q"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_12icp"]
 [ext_resource type="PackedScene" uid="uid://c30um0mlob80y" path="res://TestMap.tscn" id="3_5vqes"]
 [ext_resource type="PackedScene" uid="uid://bep6mtyiq0rm" path="res://player.tscn" id="3_wghnr"]
+[ext_resource type="PackedScene" uid="uid://dd272qnnu63x8" path="res://pickup.tscn" id="4_qhrd6"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_v0c3d"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gj0rg"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+sky_energy_multiplier = 0.0
 ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 
-[sub_resource type="Sky" id="Sky_nq8ge"]
-sky_material = SubResource("ProceduralSkyMaterial_v0c3d")
+[sub_resource type="Sky" id="Sky_6pn4a"]
+sky_material = SubResource("ProceduralSkyMaterial_gj0rg")
 
-[sub_resource type="Environment" id="Environment_rcclt"]
-background_mode = 2
-sky = SubResource("Sky_nq8ge")
+[sub_resource type="Environment" id="Environment_5uiag"]
+background_mode = 1
+background_energy_multiplier = 0.0
+sky = SubResource("Sky_6pn4a")
+ambient_light_source = 2
+ambient_light_energy = 0.0
 tonemap_mode = 2
 glow_enabled = true
 
 [node name="World" type="Node"]
 script = ExtResource("1_12icp")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
-shadow_enabled = true
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_rcclt")
+environment = SubResource("Environment_5uiag")
 
 [node name="Player" parent="." instance=ExtResource("3_wghnr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7387, 6.04561, 9.43981)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7387, 0.279787, 9.43981)
 
 [node name="scene" parent="." instance=ExtResource("3_5vqes")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.151829, 0.684757, -0.0520563)
+
+[node name="Pickup" parent="." instance=ExtResource("4_qhrd6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2.13273, -8)

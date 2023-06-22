@@ -29,11 +29,13 @@ func check_ray_hit():
 	if ray.is_colliding():
 		if ray.get_collider().is_in_group("Pickup"):
 			interaction_notifier.visible = true
-		if Input.is_action_just_pressed("Use"):
+		if Input.is_action_just_pressed("use"):
 			ray.get_collider().queue_free()
 			pages_collected += 1
+			collection_tracker.text = "Pages : " + str(pages_collected) + " / 10"
 	else:
 		interaction_notifier.visible = false
+
 
 
 func _physics_process(delta):
