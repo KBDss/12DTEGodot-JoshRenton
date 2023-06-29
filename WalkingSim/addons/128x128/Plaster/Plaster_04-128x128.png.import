@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpx034hqmcnmv"
-path.s3tc="res://.godot/imported/texture_01.png-94ebd82494c839e91a05b9e1cc2750ca.s3tc.ctex"
+uid="uid://cvtkompf2mku"
+path.s3tc="res://.godot/imported/Plaster_04-128x128.png-0c152f00f0a4ff12a985e4e235f1c137.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://addons/kenney_prototype_textures/green/texture_01.png"
-dest_files=["res://.godot/imported/texture_01.png-94ebd82494c839e91a05b9e1cc2750ca.s3tc.ctex"]
+source_file="res://addons/128x128/Plaster/Plaster_04-128x128.png"
+dest_files=["res://.godot/imported/Plaster_04-128x128.png-0c152f00f0a4ff12a985e4e235f1c137.s3tc.ctex"]
 
 [params]
 
