@@ -27,12 +27,16 @@ func _unhandled_input(event):
 
 func check_ray_hit():
 	if ray.is_colliding():
-		if ray.get_collider().is_in_group("Pickup"):
+		var collider = ray.get_collider()
+		if collider and collider.is_in_group("Pickup"):
 			interaction_notifier.visible = true
-		if Input.is_action_just_pressed("use"):
-			ray.get_collider().queue_free()
-			pages_collected += 1
-			collection_tracker.text = "Pages : " + str(pages_collected) + " / 10"
+			if Input.is_action_just_pressed("use"):
+				print("check")
+				print(ray.get_collider().name)
+				ray.get_collider().queue_free()
+				print("done")
+				pages_collected += 1
+				collection_tracker.text = "Pages : " + str(pages_collected) + " / 10"
 	else:
 		interaction_notifier.visible = false
 

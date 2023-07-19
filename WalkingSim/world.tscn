@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://bf7g7ywclqh0q"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_12icp"]
-[ext_resource type="PackedScene" uid="uid://c30um0mlob80y" path="res://TestMap.tscn" id="3_5vqes"]
 [ext_resource type="PackedScene" uid="uid://bep6mtyiq0rm" path="res://player.tscn" id="3_wghnr"]
+[ext_resource type="PackedScene" uid="uid://bq21sh5stqmmr" path="res://house.tscn" id="4_kyt4e"]
 [ext_resource type="PackedScene" uid="uid://dd272qnnu63x8" path="res://pickup.tscn" id="4_qhrd6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gj0rg"]
@@ -29,10 +29,10 @@ script = ExtResource("1_12icp")
 environment = SubResource("Environment_5uiag")
 
 [node name="Player" parent="." instance=ExtResource("3_wghnr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7387, 0.279787, 9.43981)
-
-[node name="scene" parent="." instance=ExtResource("3_5vqes")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.151829, 0.684757, -0.0520563)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7387, 0.279787, 6.43981)
 
 [node name="Pickup" parent="." instance=ExtResource("4_qhrd6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2.13273, -8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1.13273, -8)
+
+[node name="House" parent="." instance=ExtResource("4_kyt4e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.713176, -1.4969, -3.66245)
