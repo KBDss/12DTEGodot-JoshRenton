@@ -1,9 +1,20 @@
-[gd_scene load_steps=8 format=3 uid="uid://bq21sh5stqmmr"]
+[gd_scene load_steps=19 format=3 uid="uid://bq21sh5stqmmr"]
 
 [ext_resource type="PackedScene" uid="uid://bq7smb1m5l7b0" path="res://House.blend" id="1_pklm4"]
 [ext_resource type="Texture2D" uid="uid://dy8eglrsp771" path="res://addons/128x128/Dirt/Dirt_04-128x128.png" id="2_pl42k"]
 [ext_resource type="Texture2D" uid="uid://dups4o6nda8hh" path="res://addons/128x128/Brick/Brick_08-128x128.png" id="3_ek0mp"]
 [ext_resource type="Texture2D" uid="uid://dwth631bom7xg" path="res://addons/128x128/Stone/Stone_07-128x128.png" id="4_n20e4"]
+[ext_resource type="PackedScene" uid="uid://ca43ici48uif0" path="res://models/bed_01-col.glb" id="5_0w1gg"]
+[ext_resource type="PackedScene" uid="uid://bep6mtyiq0rm" path="res://player.tscn" id="6_8bbb4"]
+[ext_resource type="PackedScene" uid="uid://b4nwjmuye6ksd" path="res://models/Bookcase_02-col.glb" id="7_ocs1n"]
+[ext_resource type="PackedScene" uid="uid://cja0p8aioeyv0" path="res://models/Ceiling_Fan-col.glb" id="8_i4od8"]
+[ext_resource type="PackedScene" uid="uid://i0ggdnkq20ye" path="res://models/Ceiling_Fan_Blades-col.glb" id="9_ch7et"]
+[ext_resource type="PackedScene" uid="uid://f0h1hij8vw4" path="res://models/Chest_drawers_03-col.glb" id="10_4xnmc"]
+[ext_resource type="PackedScene" uid="uid://dskgwv02p83ym" path="res://models/Chest_drawers_05_001-col.glb" id="11_y2s5v"]
+[ext_resource type="PackedScene" uid="uid://bfw760jqquruy" path="res://models/Can-col.glb" id="12_faupf"]
+[ext_resource type="PackedScene" uid="uid://cfjxysatwpx2e" path="res://models/Books_004-col.glb" id="13_56l1u"]
+[ext_resource type="PackedScene" uid="uid://c523iybby8tx5" path="res://models/Alarm_clock-col.glb" id="14_6lrnq"]
+[ext_resource type="PackedScene" uid="uid://cxfokduflbiqs" path="res://models/Desk_lamp-col.glb" id="15_kb57j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yaaby"]
 albedo_color = Color(0.466667, 0.466667, 0.466667, 1)
@@ -25,3 +36,36 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.99656, 1.67686, 0.937895)
 surface_material_override/0 = SubResource("StandardMaterial3D_yaaby")
 surface_material_override/1 = SubResource("StandardMaterial3D_xsk46")
 surface_material_override/2 = SubResource("StandardMaterial3D_pqnem")
+
+[node name="bed_01-col" parent="." index="1" instance=ExtResource("5_0w1gg")]
+transform = Transform3D(-6.11959e-08, 0, -1.4, 0, 1.4, 0, 1.4, 0, -6.11959e-08, 5.75668, 2, -6)
+
+[node name="Player" parent="." index="2" instance=ExtResource("6_8bbb4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 2, 8)
+
+[node name="Bookcase_02-col" parent="." index="3" instance=ExtResource("7_ocs1n")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 3.03153, -9.00064)
+
+[node name="Ceiling_Fan-col" parent="." index="4" instance=ExtResource("8_i4od8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 5, -6)
+
+[node name="Ceiling_Fan_Blades-col" parent="." index="5" instance=ExtResource("9_ch7et")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 4.78759, -6)
+
+[node name="Chest_drawers_03-col" parent="." index="6" instance=ExtResource("10_4xnmc")]
+transform = Transform3D(-1.50804e-08, 0, -0.345, 0, 0.345, 0, 0.345, 0, -1.50804e-08, 7.17453, 2.35174, -7.93481)
+
+[node name="Chest_drawers_05_001-col" parent="." index="7" instance=ExtResource("11_y2s5v")]
+transform = Transform3D(-5.74805e-08, 0, -1.315, 0, 1.315, 0, 1.315, 0, -5.74805e-08, 7.23699, 2.52834, -3)
+
+[node name="Can-col" parent="." index="8" instance=ExtResource("12_faupf")]
+transform = Transform3D(-0.455, 0, -3.97774e-08, 0, 0.455, 0, 3.97774e-08, 0, -0.455, 7.21106, 2.75542, -7.72259)
+
+[node name="Books_004-col" parent="." index="9" instance=ExtResource("13_56l1u")]
+transform = Transform3D(-0.0323524, 0, 0.120741, 0, 0.125, 0, -0.120741, 0, -0.0323524, 7.10777, 2.67989, -7.9105)
+
+[node name="Alarm_clock-col" parent="." index="10" instance=ExtResource("14_6lrnq")]
+transform = Transform3D(-8.74228e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.74228e-09, 7.34272, 2.71282, -7.78845)
+
+[node name="Desk_lamp-col" parent="." index="11" instance=ExtResource("15_kb57j")]
+transform = Transform3D(0.505, 0, 0, 0, 0.505, 0, 0, 0, 0.505, 7.33685, 3.16418, -3)
