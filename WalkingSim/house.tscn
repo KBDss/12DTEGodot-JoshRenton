@@ -91,16 +91,16 @@ transform = Transform3D(0.106028, -0.829045, -0.549039, -0.836516, 0.224144, -0.
 transform = Transform3D(-4.69897e-08, 0, 1.075, 0, 1.075, 0, -1.075, 0, -4.69897e-08, -2.6991, 2.26689, -5.16492)
 
 [node name="bed_03-col" parent="." index="16" instance=ExtResource("20_yahrk")]
-transform = Transform3D(-5.55135e-08, 0, -1.27, 0, 1.27, 0, 1.27, 0, -5.55135e-08, -1.57814, 2.11017, 5.2547)
+transform = Transform3D(-6.57856e-08, 0, -1.505, 0, 1.505, 0, 1.505, 0, -6.57856e-08, -6.04317, 2.11017, 5.37914)
 
 [node name="Wardrobe_01-col" parent="." index="17" instance=ExtResource("22_b4bjr")]
-transform = Transform3D(-5.63877e-08, 0, -1.29, 0, 1.29, 0, 1.29, 0, -5.63877e-08, -0.304679, 2.31066, 8.4977)
+transform = Transform3D(-5.63877e-08, 0, -1.29, 0, 1.29, 0, 1.29, 0, -5.63877e-08, -4.42123, 2.31066, 8.4977)
 
 [node name="Ventilator_01-col2" parent="." index="18" instance=ExtResource("20_k8uad")]
-transform = Transform3D(0.0173376, -0.901221, -0.433013, -0.836516, 0.224144, -0.5, 0.547668, 0.370891, -0.75, -0.425578, 1.90731, 6.71956)
+transform = Transform3D(0.0173376, -0.901221, -0.433013, -0.836516, 0.224144, -0.5, 0.547668, 0.370891, -0.75, -4.69005, 1.90731, 7.33592)
 
 [node name="Painting_06-col" parent="." index="19" instance=ExtResource("23_crqtl")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 3.67886, 10.721)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.92009, 3.67886, 10.721)
 
 [node name="Armchair_06-col" parent="." index="20" instance=ExtResource("24_h84cm")]
-transform = Transform3D(-6.07588e-08, 0, 1.39, 0, 1.39, 0, -1.39, 0, -6.07588e-08, -9.45013, 2.08354, 6.4866)
+transform = Transform3D(-6.07588e-08, 0, 1.39, 0, 1.39, 0, -1.39, 0, -6.07588e-08, -12.3501, 2.42024, 6.21731)
