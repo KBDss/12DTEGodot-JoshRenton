@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bq21sh5stqmmr"]
+[gd_scene load_steps=30 format=3 uid="uid://bq21sh5stqmmr"]
 
 [ext_resource type="PackedScene" uid="uid://bq7smb1m5l7b0" path="res://House.blend" id="1_pklm4"]
 [ext_resource type="Texture2D" uid="uid://dy8eglrsp771" path="res://addons/128x128/Dirt/Dirt_04-128x128.png" id="2_pl42k"]
@@ -23,7 +23,9 @@
 [ext_resource type="PackedScene" uid="uid://5gbua4ys7wbp" path="res://models/Wardrobe_01-col.glb" id="22_b4bjr"]
 [ext_resource type="PackedScene" uid="uid://dii037b6nqifo" path="res://models/Painting_06-col.glb" id="23_crqtl"]
 [ext_resource type="PackedScene" uid="uid://csgxmrcfv5rba" path="res://models/Armchair_06-col.glb" id="24_h84cm"]
-[ext_resource type="PackedScene" uid="uid://culh78dn0d2kt" path="res://models/Table_02-col.glb" id="24_s4m1n"]
+[ext_resource type="PackedScene" uid="uid://bns0pqm1tta38" path="res://motelmodels/Plants_04-col.glb" id="24_mqmt6"]
+[ext_resource type="PackedScene" uid="uid://d04opavj3o3g5" path="res://motelmodels/Table_10-col.glb" id="25_bnnyr"]
+[ext_resource type="PackedScene" uid="uid://fjyb1ai6d8my" path="res://motelmodels/TV_04-col.glb" id="26_4qc1k"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yaaby"]
 albedo_color = Color(0.466667, 0.466667, 0.466667, 1)
@@ -98,7 +100,7 @@ transform = Transform3D(-6.57856e-08, 0, -1.505, 0, 1.505, 0, 1.505, 0, -6.57856
 transform = Transform3D(-5.63877e-08, 0, -1.29, 0, 1.29, 0, 1.29, 0, -5.63877e-08, -4.42123, 2.31066, 8.4977)
 
 [node name="Ventilator_01-col2" parent="." index="18" instance=ExtResource("20_k8uad")]
-transform = Transform3D(0.0173376, -0.901221, -0.433013, -0.836516, 0.224144, -0.5, 0.547668, 0.370891, -0.75, -4.69005, 1.90731, 7.33592)
+transform = Transform3D(0.0173376, -0.901221, -0.433013, -0.836516, 0.224144, -0.5, 0.547668, 0.370891, -0.75, -5.61025, 1.90731, 8.76817)
 
 [node name="Painting_06-col" parent="." index="19" instance=ExtResource("23_crqtl")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.92009, 3.67886, 10.721)
@@ -106,5 +108,11 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.920
 [node name="Armchair_06-col" parent="." index="20" instance=ExtResource("24_h84cm")]
 transform = Transform3D(-6.07588e-08, 0, 1.39, 0, 1.39, 0, -1.39, 0, -6.07588e-08, -12.3501, 2.42024, 6.21731)
 
-[node name="Table_02-col" parent="." index="21" instance=ExtResource("24_s4m1n")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10.5187, 2.48803, 6.24429)
+[node name="Plants_04-col" parent="." index="21" instance=ExtResource("24_mqmt6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6, 2, 10.2)
+
+[node name="Table_10-col" parent="." index="22" instance=ExtResource("25_bnnyr")]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -10.1048, 2.36203, 6.10317)
+
+[node name="TV_04-col" parent="." index="23" instance=ExtResource("26_4qc1k")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -10, 3.03498, 6)
