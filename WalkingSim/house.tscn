@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bq21sh5stqmmr"]
+[gd_scene load_steps=40 format=3 uid="uid://bq21sh5stqmmr"]
 
 [ext_resource type="PackedScene" uid="uid://bq7smb1m5l7b0" path="res://House.blend" id="1_pklm4"]
 [ext_resource type="Texture2D" uid="uid://dy8eglrsp771" path="res://addons/128x128/Dirt/Dirt_04-128x128.png" id="2_pl42k"]
@@ -26,6 +26,16 @@
 [ext_resource type="PackedScene" uid="uid://bns0pqm1tta38" path="res://motelmodels/Plants_04-col.glb" id="24_mqmt6"]
 [ext_resource type="PackedScene" uid="uid://d04opavj3o3g5" path="res://motelmodels/Table_10-col.glb" id="25_bnnyr"]
 [ext_resource type="PackedScene" uid="uid://fjyb1ai6d8my" path="res://motelmodels/TV_04-col.glb" id="26_4qc1k"]
+[ext_resource type="PackedScene" uid="uid://fi2gj8q8mop5" path="res://motelmodels/Table_42-col.glb" id="27_37dbi"]
+[ext_resource type="PackedScene" uid="uid://drobcho7mexe" path="res://motelmodels/Lamps-col.glb" id="28_l468d"]
+[ext_resource type="PackedScene" uid="uid://blix87k1jkylw" path="res://motelmodels/Control-col.glb" id="29_gulgt"]
+[ext_resource type="PackedScene" uid="uid://du8ri7xyw7p81" path="res://motelmodels/Bowl-col.glb" id="30_ng4j8"]
+[ext_resource type="PackedScene" uid="uid://d1ecliavygybo" path="res://motelmodels/Magazines-col.glb" id="31_q3b78"]
+[ext_resource type="PackedScene" uid="uid://d0vaquobw3vyb" path="res://motelmodels/Book_02-col.glb" id="32_54a4b"]
+[ext_resource type="PackedScene" uid="uid://03ht7aqwex3m" path="res://motelmodels/Water-col.glb" id="33_0lgph"]
+[ext_resource type="PackedScene" uid="uid://yc76fyr08k06" path="res://motelmodels/Paintings_07-col.glb" id="34_urgcc"]
+[ext_resource type="PackedScene" uid="uid://bfdjgefg8iqys" path="res://motelmodels/Paintings_05-col.glb" id="35_lb0p0"]
+[ext_resource type="PackedScene" uid="uid://dweboewt0gyvb" path="res://motelmodels/Paintings_03-col.glb" id="36_nn3c6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yaaby"]
 albedo_color = Color(0.466667, 0.466667, 0.466667, 1)
@@ -100,7 +110,7 @@ transform = Transform3D(-6.57856e-08, 0, -1.505, 0, 1.505, 0, 1.505, 0, -6.57856
 transform = Transform3D(-5.63877e-08, 0, -1.29, 0, 1.29, 0, 1.29, 0, -5.63877e-08, -4.42123, 2.31066, 8.4977)
 
 [node name="Ventilator_01-col2" parent="." index="18" instance=ExtResource("20_k8uad")]
-transform = Transform3D(0.0173376, -0.901221, -0.433013, -0.836516, 0.224144, -0.5, 0.547668, 0.370891, -0.75, -5.61025, 1.90731, 8.76817)
+transform = Transform3D(-0.258819, -0.965926, -2.38419e-07, -0.836516, 0.224144, -0.5, 0.482963, -0.129409, -0.866026, -4.79641, 1.90731, 7.33884)
 
 [node name="Painting_06-col" parent="." index="19" instance=ExtResource("23_crqtl")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.92009, 3.67886, 10.721)
@@ -116,3 +126,33 @@ transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -10.1048, 2.36203, 6.10
 
 [node name="TV_04-col" parent="." index="23" instance=ExtResource("26_4qc1k")]
 transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -10, 3.03498, 6)
+
+[node name="Table_42-col" parent="." index="24" instance=ExtResource("27_37dbi")]
+transform = Transform3D(-7.43094e-08, 0, 1.7, 0, 1.7, 0, -1.7, 0, -7.43094e-08, -4.57247, 2.1563, 7.27688)
+
+[node name="Lamps-col" parent="." index="25" instance=ExtResource("28_l468d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.44205, 2.58514, 7.03922)
+
+[node name="Control-col" parent="." index="26" instance=ExtResource("29_gulgt")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -10.4046, 2.45578, 6.80803)
+
+[node name="Bowl-col" parent="." index="27" instance=ExtResource("30_ng4j8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86614, 2.62135, 7)
+
+[node name="Magazines-col" parent="." index="28" instance=ExtResource("31_q3b78")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.58452, 5.76395)
+
+[node name="Book_02-col" parent="." index="29" instance=ExtResource("32_54a4b")]
+transform = Transform3D(-0.411483, 0, -0.911418, 0, 1, 0, 0.911418, 0, -0.411483, -4.3707, 2.62696, 7.45463)
+
+[node name="Water-col" parent="." index="30" instance=ExtResource("33_0lgph")]
+transform = Transform3D(0.113186, 0.993574, -2.96108e-08, 0, 2.98023e-08, 1, 0.993574, -0.113186, 3.3732e-09, -4.76548, 2.62204, 7.25003)
+
+[node name="Paintings_07-col" parent="." index="31" instance=ExtResource("34_urgcc")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.2726, 4, 12)
+
+[node name="Paintings_05-col" parent="." index="32" instance=ExtResource("35_lb0p0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.2622, 4, 9.91757)
+
+[node name="Paintings_03-col" parent="." index="33" instance=ExtResource("36_nn3c6")]
+transform = Transform3D(0.999979, -0.00638558, -0.000622363, 0.0063792, 0.999932, -0.00977831, 0.000684757, 0.00977414, 0.999952, -9, 4.03331, 1.93272)
