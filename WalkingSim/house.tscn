@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bq21sh5stqmmr"]
+[gd_scene load_steps=44 format=3 uid="uid://bq21sh5stqmmr"]
 
 [ext_resource type="PackedScene" uid="uid://bq7smb1m5l7b0" path="res://House.blend" id="1_pklm4"]
 [ext_resource type="Texture2D" uid="uid://dy8eglrsp771" path="res://addons/128x128/Dirt/Dirt_04-128x128.png" id="2_pl42k"]
@@ -36,6 +36,10 @@
 [ext_resource type="PackedScene" uid="uid://yc76fyr08k06" path="res://motelmodels/Paintings_07-col.glb" id="34_urgcc"]
 [ext_resource type="PackedScene" uid="uid://bfdjgefg8iqys" path="res://motelmodels/Paintings_05-col.glb" id="35_lb0p0"]
 [ext_resource type="PackedScene" uid="uid://dweboewt0gyvb" path="res://motelmodels/Paintings_03-col.glb" id="36_nn3c6"]
+[ext_resource type="PackedScene" uid="uid://x6cc10otqqaq" path="res://motelmodels/Table_02-col.glb" id="37_n32li"]
+[ext_resource type="PackedScene" uid="uid://ta67fd1idbo7" path="res://models/Flower_Table-col.glb" id="38_d8pxe"]
+[ext_resource type="PackedScene" uid="uid://cu8768tqi7vog" path="res://models/Phone_01-col.glb" id="39_5bqln"]
+[ext_resource type="PackedScene" uid="uid://bdhx0rf0d4u2p" path="res://motelmodels/Magazine_01-col.glb" id="40_libcu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yaaby"]
 albedo_color = Color(0.466667, 0.466667, 0.466667, 1)
@@ -156,3 +160,21 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.262
 
 [node name="Paintings_03-col" parent="." index="33" instance=ExtResource("36_nn3c6")]
 transform = Transform3D(0.999979, -0.00638558, -0.000622363, 0.0063792, 0.999932, -0.00977831, 0.000684757, 0.00977414, 0.999952, -9, 4.03331, 1.93272)
+
+[node name="Table_02-col" parent="." index="34" instance=ExtResource("37_n32li")]
+transform = Transform3D(1.18812, 0, -0.168418, 0, 1.2, 0, 0.168418, 0, 1.18812, 0.547999, 1.62121, 9.4563)
+
+[node name="Desk_lamp-col2" parent="." index="35" instance=ExtResource("15_kb57j")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0.789888, 2.90022, 9.36657)
+
+[node name="Flower_Table-col" parent="." index="36" instance=ExtResource("38_d8pxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389417, 2.81879, 8.81853)
+
+[node name="Phone_01-col" parent="." index="37" instance=ExtResource("39_5bqln")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 0, 2.82847, 9.44856)
+
+[node name="Magazine_01-col" parent="." index="38" instance=ExtResource("40_libcu")]
+transform = Transform3D(0.990038, 0, -0.140797, 0, 1, 0, 0.140797, 0, 0.990038, 0.30149, 2.77445, 9.57506)
+
+[node name="Plants_04-col2" parent="." index="39" instance=ExtResource("24_mqmt6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.782783, 2.9318, 9.97851)
