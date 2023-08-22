@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://dvr5fng3qgpao"]
+
+[ext_resource type="Texture2D" uid="uid://bhychx82k1plj" path="res://addons/kenney_prototype_textures/purple/texture_07.png" id="1_8fgdu"]
+[ext_resource type="Script" path="res://Enemy.gd" id="1_ycn16"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ypl24"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n4bcm"]
+albedo_texture = ExtResource("1_8fgdu")
+uv1_triplanar = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_cbqs0"]
+
+[node name="Enemy" type="CharacterBody3D"]
+script = ExtResource("1_ycn16")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_ypl24")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_n4bcm")
+mesh = SubResource("CapsuleMesh_cbqs0")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
