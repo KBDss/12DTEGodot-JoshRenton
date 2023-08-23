@@ -32,11 +32,11 @@ collide_with_bodies = false
 [node name="SpotLight3D" type="SpotLight3D" parent="Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.23791)
 light_energy = 4.88
-light_volumetric_fog_energy = 2.846
+light_volumetric_fog_energy = 2.624
 shadow_enabled = true
 distance_fade_enabled = true
 spot_range = 15.0348
-spot_angle = 25.3125
+spot_angle = 37.6711
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -68,7 +68,7 @@ label_settings = SubResource("LabelSettings_0nyvb")
 layout_mode = 0
 offset_left = 10.0
 offset_right = 112.0
-offset_bottom = 40.0
+offset_bottom = 26.0
 
 [node name="CollectionTracker" type="Label" parent="Control/MarginContainer"]
 layout_mode = 2
