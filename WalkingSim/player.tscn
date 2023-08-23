@@ -72,4 +72,5 @@ offset_bottom = 26.0
 
 [node name="CollectionTracker" type="Label" parent="Control/MarginContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 8
 text = "Pickups: 0/10"
