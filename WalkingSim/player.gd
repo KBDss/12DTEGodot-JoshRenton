@@ -36,7 +36,7 @@ func check_ray_hit():
 				ray.get_collider().queue_free()
 				print("done")
 				pages_collected += 1
-				collection_tracker.text = "Pages : " + str(pages_collected) + " / 10"
+				collection_tracker.text = "Keys : " + str(pages_collected) + " / 5"
 	else:
 		interaction_notifier.visible = false
 
